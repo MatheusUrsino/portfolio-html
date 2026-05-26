@@ -7,6 +7,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: radial-gradient(circle at top, rgba(95, 45, 255, 0.15), transparent 18%),
         radial-gradient(circle at bottom right, rgba(34, 197, 255, 0.12), transparent 16%),
