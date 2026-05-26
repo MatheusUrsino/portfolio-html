@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+
+<body>
+    <header>
+        <nav class="NavContent">
+            <ul>
+                <li><a href="#" class="headerTexts">Inicio</a></li>
+                <li><a href="#" class="headerTexts">Meu portfólio</a></li>
+                <li><a href="#Contact" class="headerTexts">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="Apresentation">
+            <div class="ProfileWrapper">
+                <a href="https://www.linkedin.com/in/seu-usuario" target="_blank" rel="noopener noreferrer"
+                    class="ProfileIcons">
+                    <img src="Images/linkedin.png" alt="linkedin" id="linkedInIcon" />
+                </a>
+                <img src="Images/FotoPerfil.jpeg" alt="Foto de Apresentação" class="PhotoApresentation">
+                <a href="https://www.instagram.com/seu_usuario" target="_blank" rel="noopener noreferrer"
+                    class="ProfileIcons">
+                    <img src="Images/social.png" alt="instagram-logo" id="InstagramIcon" />
+                </a>
+                <a href="https://github.com/MatheusUrsino" target="_blank" rel="noopener noreferrer" class="ProfileIcons">
+                    <img src="https://img.icons8.com/3d-sugary/100/github.png" alt="github" id="GitHubIcon" />
+                </a>
+            </div>
+            <section id="TextApresentation">
+                <h1 id="TitleMain">Matheus Ursino</h1>
+                <p>Sou um profissional em formação na área de Tecnologia e Desenvolvimento, com conhecimentos em
+                    programação front-end e back-end, além de experiência prática com ferramentas de automação, análise
+                    de dados e otimização de processos. Tenho facilidade em aprender novas tecnologias, pensamento
+                    analítico e foco em criar soluções eficientes para problemas reais. Atualmente, busco evoluir
+                    constantemente minhas habilidades em desenvolvimento, dados e melhoria de processos, unindo
+                    conhecimento técnico, adaptabilidade e visão estratégica para gerar impacto através da tecnologia.
+                </p>
+            </section>
+
+            <section id="Projects">
+                <h2 class="SectionText">Meu Portfólio:</h2>
+                <div class="ProjectWrapper">
+                    <div class="ProjectCard">
+                        <div class="boxCard">
+                            <h3>LingoLar</h3>
+                            <img src="https://opengraph.githubassets.com/1/MatheusUrsino/LingoLar" alt="LingoLar" class="ProjectImage" />
+                            <div class="ImageOverlay">
+                                <a href="https://lingo-lar.vercel.app" target="_blank" rel="noopener noreferrer" class="BtnAccess">Acessar</a>
+                            </div>
+                        </div>
+                        <p class="ProjectDescription">Plataforma de aprendizado de idiomas em fase alpha, desenvolvida em TypeScript com foco em auxiliar imigrantes a aprender o novo idioma de forma prática.</p>
+                    </div>
+                    <div class="ProjectCard">
+                        <div class="boxCard">
+                            <h3>SaaS empresarial</h3>
+                            <img src="https://opengraph.githubassets.com/1/MatheusUrsino/BravoCRUD" alt="BravoCRUD" class="ProjectImage" />
+                            <div class="ImageOverlay">
+                                <a href="https://bravo-crud.vercel.app" target="_blank" rel="noopener noreferrer" class="BtnAccess">Acessar</a>
+                            </div>
+                        </div>
+                        <p class="ProjectDescription">Sistema SaaS baseado em CRUD. Interface completa para gerenciamento de dados, construída com TypeScript.</p>
+                    </div>
+                    <div class="ProjectCard">
+                        <div class="boxCard">
+                            <h3>Noolar</h3>
+                            <img src="https://opengraph.githubassets.com/1/MatheusUrsino/Noolar" alt="Noolar" class="ProjectImage" />
+                            <div class="ImageOverlay">
+                                <a href="https://noolar.vercel.app" target="_blank" rel="noopener noreferrer" class="BtnAccess">Acessar</a>
+                            </div>
+                        </div>
+                        <p class="ProjectDescription">Plataforma criada para auxiliar na integração de imigrantes, oferecendo suporte, acesso à informação e recursos que facilitam a adaptação e inclusão em um novo país.</p>
+                    </div>
+                    <div class="ProjectCard">
+                        <div class="boxCard">
+                            <h3>Mapa de Carreira</h3>
+                            <img src="https://opengraph.githubassets.com/1/MatheusUrsino/MapaDeCarreira" alt="Mapa de Carreira" class="ProjectImage" />
+                            <div class="ImageOverlay">
+                                <a href="https://matheusursino.github.io/MapaDeCarreira/" target="_blank" rel="noopener noreferrer" class="BtnAccess">Acessar</a>
+                            </div>
+                        </div>
+                        <p class="ProjectDescription">Mapa de carreira desenvolvido em 2024, apresentando trajetória profissional, habilidades e objetivos de forma visual e interativa com JavaScript.</p>
+                    </div>
+                    <div class="ProjectCard">
+                        <div class="boxCard">
+                            <h3>Lista de Tarefas — Vue.js</h3>
+                            <img src="https://opengraph.githubassets.com/1/MatheusUrsino/ListaDeTarefasEmVueJS" alt="Lista de Tarefas" class="ProjectImage" />
+                            <div class="ImageOverlay">
+                                <a href="https://lista-de-tarefas-em-vue-js.vercel.app" target="_blank" rel="noopener noreferrer" class="BtnAccess">Acessar</a>
+                            </div>
+                        </div>
+                        <p class="ProjectDescription">Sistema de gerenciamento de tarefas desenvolvido com Vue.js, demonstrando domínio de componentes reativos e gerenciamento de estado no front-end.</p>
+                    </div>
+            </section>
+            </div>
+            <section id="Contact">
+                <h2 class="SectionText">Contato:</h2>
+                <form class="ContactForm" onsubmit="handleSubmit(event)">
+                    <input type="text" name="name" placeholder="Seu nome" required class="ContactInput" />
+                    <input type="email" name="email" placeholder="Seu e-mail" required class="ContactInput" />
+                    <textarea name="message" placeholder="Sua mensagem..." rows="5" required class="ContactInput ContactTextarea"></textarea>
+                    <button type="submit" class="BtnAccess BtnSubmit">Enviar mensagem</button>
+                </form>
+                <p id="ContactFeedback" class="ContactFeedback"></p>
+            </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        function handleSubmit(e) {
+            e.preventDefault();
+            const form = e.target;
+            const feedback = document.getElementById('ContactFeedback');
+            const data = new FormData(form);
+            const mailto = `mailto:matheusursinoprofissional@gmail.com?subject=Contato de ${encodeURIComponent(data.get('name'))}&body=${encodeURIComponent(`Nome: ${data.get('name')}\nE-mail: ${data.get('email')}\n\n${data.get('message')}`)}`;
+            window.location.href = mailto;
+            feedback.textContent = 'Abrindo seu cliente de e-mail...';
+            form.reset();
+        }
+    </script>
+</body>
+
+</html>
