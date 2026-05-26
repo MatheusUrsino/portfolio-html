@@ -9,6 +9,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -18,6 +19,8 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     font-family: 'JetBrains Mono', 'Courier New', monospace;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 header {
@@ -451,16 +454,23 @@ a {
     }
 
     .ProfileWrapper {
-        width: 260px;
-        height: 260px;
+        width: 240px;
+        height: 240px;
         margin: auto;
     }
 
-    #linkedInIcon,
+    #linkedInIcon {
+        right: auto;
+        left: -48px;
+        width: 36px;
+        height: 36px;
+    }
+
     #InstagramIcon,
     #GitHubIcon {
-        width: 38px;
-        height: 38px;
+        left: 85%;
+        width: 36px;
+        height: 36px;
     }
 
     .ProjectWrapper {
