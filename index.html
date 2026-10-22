@@ -3,124 +3,252 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - Matheus Ursino</title>
-  <meta name="description" content="Portfólio profissional de Matheus Ursino, desenvolvedor full stack (React, Next.js, Node.js).">
+  <title>Matheus Ursino | Desenvolvedor Full Stack</title>
+  <meta name="description" content="Matheus Ursino, desenvolvedor full stack (React, Next.js, TypeScript, Node.js). Sites, aplicações web e automação de processos.">
+  <meta property="og:title" content="Matheus Ursino | Desenvolvedor Full Stack">
+  <meta property="og:description" content="Sites, aplicações web e automação de processos com React, Next.js, Node.js e Python.">
+  <meta property="og:image" content="Images/FotoPerfil.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <header>
-        <nav class="NavContent">
-            <ul>
-                <li><a href="#Apresentation" class="headerTexts">Inicio</a></li>
-                <li><a href="#Projects" class="headerTexts">Meu portfólio</a></li>
-                <li><a href="#Contact" class="headerTexts">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="Apresentation">
-            <div class="ProfileWrapper">
-                <a href="https://br.linkedin.com/in/matheus-ursino" target="_blank" rel="noopener noreferrer"
-                    class="ProfileIcons">
-                    <img src="Images/linkedin.png" alt="linkedin" id="linkedInIcon" />
-                </a>
-                <img src="Images/FotoPerfil.jpeg" alt="Foto de Apresentação" class="PhotoApresentation">
-                <a href="https://www.instagram.com/maur.fotos" target="_blank" rel="noopener noreferrer"
-                    class="ProfileIcons">
-                    <img src="Images/social.png" alt="instagram-logo" id="InstagramIcon" />
-                </a>
-                <a href="https://github.com/MatheusUrsino" target="_blank" rel="noopener noreferrer" class="ProfileIcons">
-                    <img src="https://img.icons8.com/3d-sugary/100/github.png" alt="github" id="GitHubIcon" />
-                </a>
-            </div>
-            <section id="TextApresentation">
-                <h1 id="TitleMain">Matheus Ursino</h1>
-                <p>Sou desenvolvedor full stack, com experiência em front-end (React, Next.js, Vue.js, TypeScript) e back-end (Node.js, PostgreSQL, Drizzle ORM). Gosto de construir produtos completos, do banco de dados à interface, com foco em código limpo e soluções eficientes para problemas reais. Estou sempre estudando e evoluindo minha stack, unindo conhecimento técnico e visão de produto para gerar impacto através da tecnologia.
-                </p>
-            </section>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Principal">
+      <a href="#inicio" class="brand">MU<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#servicos" data-i18n="nav_services">Serviços</a></li>
+        <li><a href="#projetos" data-i18n="nav_projects">Projetos</a></li>
+        <li><a href="#contato" class="nav-cta" data-i18n="nav_contact">Contato</a></li>
+      </ul>
+      <div class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-lang="pt" aria-pressed="true">PT</button><button type="button" data-lang="en" aria-pressed="false">EN</button></div>
+    </nav>
+  </header>
 
-            <section id="Projects">
-                <h2 class="SectionText">Meu Portfólio:</h2>
-                <div class="ProjectWrapper">
-                    <div class="ProjectCard">
-                        <div class="boxCard">
-                            <h3>LingoLar</h3>
-                            <img src="Images/Lingolar.png" alt="Imagem do projeto Noolar LingoLar" class="ProjectImage" />
-                            <div class="ImageOverlay">
-                                <a href="https://lingo-lar.vercel.app" target="_blank" rel="noopener noreferrer" class="BtnAccess">Acessar</a>
-                            </div>
-                        </div>
-                        <p class="ProjectDescription">Plataforma de aprendizado de idiomas em fase alpha, desenvolvida em TypeScript com foco em auxiliar imigrantes a aprender o novo idioma de forma prática.</p>
-                    </div>
-                    <div class="ProjectCard">
-                        <div class="boxCard">
-                            <h3>SaaS empresarial</h3>
-                            <img src="Images/SaaS-Empresarial.png" alt="Imagem do projeto de SaaS-Empresarial" class="ProjectImage" />
-                            <div class="ImageOverlay">
-                                <a href="https://bravo-crud.vercel.app" target="_blank" rel="noopener noreferrer" class="BtnAccess">Acessar</a>
-                            </div>
-                        </div>
-                        <p class="ProjectDescription">Sistema SaaS baseado em CRUD. Interface completa para gerenciamento de dados, construída com TypeScript.</p>
-                    </div>
-                    <div class="ProjectCard">
-                        <div class="boxCard">
-                            <h3>Noolar</h3>
-                            <img src="Images/Noolar.png" alt="Imagem do projeto Noolar" class="ProjectImage" />
-                            <div class="ImageOverlay">
-                                <a href="https://noolar.vercel.app" target="_blank" rel="noopener noreferrer" class="BtnAccess">Acessar</a>
-                            </div>
-                        </div>
-                        <p class="ProjectDescription">Plataforma criada para auxiliar na integração de imigrantes, oferecendo suporte, acesso à informação e recursos que facilitam a adaptação e inclusão em um novo país.</p>
-                    </div>
-                    <div class="ProjectCard">
-                        <div class="boxCard">
-                            <h3>Mapa de Carreira</h3>
-                            <img src="Images/Mapa-de-carreira.png" alt="Imagem do projeto de Mapa de Carreira" class="ProjectImage" />
-                            <div class="ImageOverlay">
-                                <a href="https://matheusursino.github.io/MapaDeCarreira/" target="_blank" rel="noopener noreferrer" class="BtnAccess">Acessar</a>
-                            </div>
-                        </div>
-                        <p class="ProjectDescription">Mapa de carreira desenvolvido em 2024, apresentando trajetória profissional, habilidades e objetivos de forma visual e interativa com JavaScript.</p>
-                    </div>
-                    <div class="ProjectCard">
-                        <div class="boxCard">
-                            <h3>Lista de Tarefas — Vue.js</h3>
-                            <img src="Images/Lista-de-tarefas.png" alt="Imagem do projeto de Lista de Tarefas" class="ProjectImage" />
-                            <div class="ImageOverlay">
-                                <a href="https://lista-de-tarefas-em-vue-js.vercel.app" target="_blank" rel="noopener noreferrer" class="BtnAccess">Acessar</a>
-                            </div>
-                        </div>
-                        <p class="ProjectDescription">Sistema de gerenciamento de tarefas desenvolvido com Vue.js, demonstrando domínio de componentes reativos e gerenciamento de estado no front-end.</p>
-                    </div>
-            </section>
-            </div>
-            <section id="Contact">
-                <h2 class="SectionText">Contato:</h2>
-                <form class="ContactForm" onsubmit="handleSubmit(event)">
-                    <input type="text" name="name" placeholder="Seu nome" required class="ContactInput" />
-                    <input type="email" name="email" placeholder="Seu e-mail" required class="ContactInput" />
-                    <textarea name="message" placeholder="Sua mensagem..." rows="5" required class="ContactInput ContactTextarea"></textarea>
-                    <button type="submit" class="BtnAccess BtnSubmit">Enviar mensagem</button>
-                </form>
-                <p id="ContactFeedback" class="ContactFeedback"></p>
-            </section>
-    </main>
-    <footer>
+  <main>
+    <section id="inicio" class="hero container">
+      <div class="hero-text">
+        <p class="eyebrow" data-i18n="eyebrow">Desenvolvedor Full Stack</p>
+        <h1>Matheus Ursino</h1>
+        <p class="lead" data-i18n="lead">Construo sites, aplicações web e automações que resolvem problemas reais, do banco de dados à interface. Trabalho no dia a dia com regras de negócio do setor fiscal de uma grande conta do varejo e transformo tarefas manuais em ferramentas que a equipe realmente usa.</p>
+        <div class="hero-actions">
+          <a href="#projetos" class="btn btn-primary" data-i18n="btn_projects">Ver projetos</a>
+          <a href="#contato" class="btn btn-ghost" data-i18n="btn_talk">Falar comigo</a>
+        </div>
+        <ul class="chips" aria-label="Tecnologias">
+          <li>React</li><li>Next.js</li><li>TypeScript</li><li>Node.js</li><li>PostgreSQL</li><li>Tailwind CSS</li><li>Vue.js</li><li>Python</li><li>VBA</li>
+        </ul>
+        <div class="social">
+          <a href="https://br.linkedin.com/in/matheus-ursino" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://github.com/MatheusUrsino" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+          <a href="mailto:matheusursinoprofissional@gmail.com" aria-label="E-mail">E-mail</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="Images/FotoPerfil.jpeg" alt="Foto de Matheus Ursino" data-i18n-alt="a_photo" width="360" height="360">
+      </div>
+    </section>
 
-    </footer>
-    <script>
-        function handleSubmit(e) {
-            e.preventDefault();
-            const form = e.target;
-            const feedback = document.getElementById('ContactFeedback');
-            const data = new FormData(form);
-            const mailto = `mailto:matheusursinoprofissional@gmail.com?subject=Contato de ${encodeURIComponent(data.get('name'))}&body=${encodeURIComponent(`Nome: ${data.get('name')}\nE-mail: ${data.get('email')}\n\n${data.get('message')}`)}`;
-            window.location.href = mailto;
-            feedback.textContent = 'Abrindo seu cliente de e-mail...';
-            form.reset();
-        }
-    </script>
+    <section id="servicos" class="container section">
+      <h2 class="section-title" data-i18n="t_services">O que eu faço</h2>
+      <div class="services">
+        <article class="service">
+          <h3 data-i18n="s1_t">Sites e landing pages</h3>
+          <p data-i18n="s1_p">Páginas rápidas, responsivas e fiéis ao design (inclusive a partir de protótipos do Figma), prontas para pequenos negócios e lançamentos.</p>
+        </article>
+        <article class="service">
+          <h3 data-i18n="s2_t">Aplicações web full stack</h3>
+          <p data-i18n="s2_p">Produtos completos com React, Next.js, TypeScript, Node.js e PostgreSQL: autenticação, painéis administrativos e CRUDs.</p>
+        </article>
+        <article class="service">
+          <h3 data-i18n="s3_t">Automação de processos</h3>
+          <p data-i18n="s3_p">Geração de planilhas, renomeação e processamento de PDFs em lote e conferência assistida por IA, com Python, VBA e web.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projetos" class="container section">
+      <h2 class="section-title" data-i18n="t_projects">Projetos selecionados</h2>
+      <p class="section-sub" data-i18n="sub_projects">Alguns trabalhos meus. Cada cartão indica o estágio do projeto.</p>
+
+      <div class="projects">
+
+        <article class="project featured">
+          <img src="Images/Verifica-Ai.jpg" alt="Página inicial da plataforma Verifica Aí" data-i18n-alt="a_vf" width="1568" height="726">
+          <div class="project-body">
+            <div class="project-head"><span class="eyebrow-badge" data-i18n="feat_label">Projeto em destaque</span><span class="badge" data-i18n="feat_live">No ar</span></div>
+            <h3>Verifica Aí</h3>
+            <p data-i18n="vf_p">Plataforma de letramento digital que ensina a identificar golpes, fake news e conteúdos gerados por IA. Reúne um assistente virtual (Robôtive), guia prático, notícias e comunidade, em uma interface simples e acessível pensada para todos, inclusive idosos.</p>
+            <p class="role"><strong data-i18n="role_l">Meu papel:</strong> <span data-i18n="role_t">Product Owner, definindo o escopo, as funcionalidades e a experiência da plataforma. Projeto final do programa Transforme-se (Serasa Experian).</span></p>
+            <div class="links">
+              <a href="https://verifica-ai-plataforma.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="l_view">Ver online</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="Images/Noolar.jpg" alt="Página inicial da plataforma Noolar" data-i18n-alt="a_no" loading="lazy" width="1200" height="565">
+          <div class="project-body">
+            <div class="project-head"><h3>Noolar</h3><span class="badge" data-i18n="b_beta">Beta</span></div>
+            <p data-i18n="no_p">Plataforma de apoio a imigrantes latino-americanos no Brasil: cursos de português, orientação e comunidade, com área de leitura e acessibilidade em Libras.</p>
+            <div class="links">
+              <a href="https://noolar.vercel.app" target="_blank" rel="noopener noreferrer" data-i18n="l_view">Ver online</a>
+              <a href="https://github.com/MatheusUrsino/Noolar" target="_blank" rel="noopener noreferrer" data-i18n="l_code">Código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="Images/Lingolar.jpg" alt="Página inicial da plataforma LingoLar" data-i18n-alt="a_li" loading="lazy" width="1200" height="548">
+          <div class="project-body">
+            <div class="project-head"><h3>LingoLar</h3><span class="badge" data-i18n="b_alpha">Alpha</span></div>
+            <p data-i18n="li_p">Plataforma de aprendizado de idiomas para imigrantes, em português, espanhol e inglês, com foco em prática do dia a dia.</p>
+            <ul class="stack"><li>TypeScript</li><li>Next.js</li><li>Tailwind</li><li>PostgreSQL</li><li>Drizzle ORM</li></ul>
+            <div class="links">
+              <a href="https://lingo-lar.vercel.app" target="_blank" rel="noopener noreferrer" data-i18n="l_view">Ver online</a>
+              <a href="https://github.com/MatheusUrsino/LingoLar" target="_blank" rel="noopener noreferrer" data-i18n="l_code">Código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="Images/SaaS-Empresarial.jpg" alt="Painel de status do SaaS CRUD App" data-i18n-alt="a_sa" loading="lazy" width="1200" height="553">
+          <div class="project-body">
+            <div class="project-head"><h3>SaaS CRUD App</h3><span class="badge" data-i18n="b_proto">Protótipo</span></div>
+            <p data-i18n="sa_p">Sistema de gestão baseado em operações CRUD, com autenticação, gerenciamento de membros e painel administrativo com gráficos de status.</p>
+            <ul class="stack"><li>Vue.js</li><li>TypeScript</li><li>CSS</li></ul>
+            <div class="links">
+              <a href="https://bravo-crud.vercel.app" target="_blank" rel="noopener noreferrer" data-i18n="l_view">Ver online</a>
+              <a href="https://github.com/MatheusUrsino/SaaS-CRUD-App" target="_blank" rel="noopener noreferrer" data-i18n="l_code">Código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="Images/Acqua.jpg" alt="Landing page Prédio Acqua" data-i18n-alt="a_ac" loading="lazy" width="1568" height="581">
+          <div class="project-body">
+            <div class="project-head"><h3 data-i18n="ac_t">Landing page Prédio Acqua</h3><span class="badge" data-i18n="b_study">Projeto de estudo</span></div>
+            <p data-i18n="ac_p">Landing page de lançamento imobiliário construída a partir de um protótipo do Figma, com contagem regressiva, captação de e-mail e galeria de andamento da obra.</p>
+            <ul class="stack"><li>HTML</li><li>CSS</li><li>Figma</li></ul>
+            <div class="links">
+              <a href="https://matheusursino.github.io/Projeto-Acqua/" target="_blank" rel="noopener noreferrer" data-i18n="l_view">Ver online</a>
+              <a href="https://github.com/MatheusUrsino/Projeto-Acqua" target="_blank" rel="noopener noreferrer" data-i18n="l_code">Código</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="Images/Gerador.svg" alt="Ilustração: planilha modelo transformada em planilha de composições por um script Python" data-i18n-alt="a_ge" loading="lazy" width="1200" height="560">
+          <div class="project-body">
+            <div class="project-head"><h3 data-i18n="ge_t">Gerador de composições</h3><span class="badge" data-i18n="b_internal">Uso interno</span></div>
+            <p data-i18n="ge_p">Ferramenta que gera automaticamente as composições da planilha de trabalho da minha equipe a partir de um modelo oficial, eliminando um processo manual e repetitivo.</p>
+            <ul class="stack"><li>Python</li><li>Excel</li></ul>
+            <div class="links">
+              <a href="https://github.com/MatheusUrsino/Gerador-de-composi-o" target="_blank" rel="noopener noreferrer" data-i18n="l_code">Código</a>
+            </div>
+          </div>
+        </article>
+
+
+      </div>
+      <p class="more"><a href="https://github.com/MatheusUrsino?tab=repositories" target="_blank" rel="noopener noreferrer" data-i18n="more">Ver todos os repositórios no GitHub →</a></p>
+    </section>
+
+
+    <section id="contato" class="container section contact">
+      <h2 class="section-title" data-i18n="t_contact">Vamos conversar?</h2>
+      <p class="section-sub" data-i18n="sub_contact">Conte rapidamente o que você precisa e respondo com perguntas e um plano claro.</p>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <label for="name" data-i18n="l_name">Nome</label>
+        <input id="name" type="text" name="name" placeholder="Seu nome" data-i18n-placeholder="ph_name" required autocomplete="name">
+        <label for="email" data-i18n="l_email">E-mail</label>
+        <input id="email" type="email" name="email" placeholder="voce@exemplo.com" data-i18n-placeholder="ph_email" required autocomplete="email">
+        <label for="message" data-i18n="l_msg">Mensagem</label>
+        <textarea id="message" name="message" placeholder="Descreva seu projeto..." data-i18n-placeholder="ph_msg" rows="5" required></textarea>
+        <button type="submit" class="btn btn-primary" data-i18n="btn_send">Enviar mensagem</button>
+        <p id="ContactFeedback" class="feedback" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Matheus Ursino · São Paulo, Brasil</p>
+  </footer>
+
+  <script>
+    var EN = {
+      nav_services: "Services", nav_projects: "Projects", nav_contact: "Contact",
+      eyebrow: "Full Stack Developer",
+      lead: "I build websites, web applications and automations that solve real problems, from the database to the interface. Every day I work with business rules in the tax department of a large retail account, turning manual tasks into tools the team actually uses.",
+      btn_projects: "View projects", btn_talk: "Get in touch",
+      t_services: "What I do",
+      s1_t: "Websites and landing pages", s1_p: "Fast, responsive pages faithful to the design (including from Figma prototypes), ready for small businesses and launches.",
+      s2_t: "Full stack web applications", s2_p: "Complete products with React, Next.js, TypeScript, Node.js and PostgreSQL: authentication, admin dashboards and CRUDs.",
+      s3_t: "Process automation", s3_p: "Spreadsheet generation, bulk PDF renaming and processing, and AI-assisted invoice review, using Python, VBA and web.",
+      t_projects: "Selected projects", sub_projects: "A few of my projects. Each card shows the project stage.",
+      feat_label: "Featured project", feat_live: "Live",
+      vf_p: "Digital literacy platform that teaches people to spot scams, fake news and AI-generated content. It brings together a virtual assistant (Robôtive), a practical guide, news and a community, in a simple, accessible interface designed for everyone, including older adults.",
+      role_l: "My role:", role_t: "Product Owner, defining the scope, features and experience of the platform. Final project of the Transforme-se program (Serasa Experian).",
+      no_p: "Platform supporting Latin American immigrants in Brazil: Portuguese courses, guidance and community, with a reading area and Libras (sign language) accessibility.",
+      li_p: "Language-learning platform for immigrants, in Portuguese, Spanish and English, focused on everyday practice.",
+      sa_p: "Management system built around CRUD operations, with authentication, member management and an admin dashboard with status charts.",
+      ac_t: "Prédio Acqua landing page", ac_p: "Real-estate launch landing page built from a Figma prototype, with countdown, email capture and a construction progress gallery.",
+      ge_t: "Composition generator", ge_p: "Tool that automatically generates the compositions of my team's work spreadsheet from an official template, removing a manual, repetitive process.",
+      b_beta: "Beta", b_alpha: "Alpha", b_proto: "Prototype", b_study: "Study project", b_internal: "Internal use",
+      l_view: "View live", l_code: "Code", more: "See all repositories on GitHub \u2192",
+      t_contact: "Let's talk?", sub_contact: "Briefly tell me what you need and I'll reply with questions and a clear plan.",
+      l_name: "Name", l_email: "Email", l_msg: "Message", btn_send: "Send message",
+      ph_name: "Your name", ph_email: "you@example.com", ph_msg: "Describe your project...",
+      a_photo: "Photo of Matheus Ursino", a_vf: "Verifica Aí platform home page", a_no: "Noolar platform home page", a_li: "LingoLar platform home page",
+      a_sa: "SaaS CRUD App status dashboard", a_ac: "Prédio Acqua landing page",
+      a_ge: "Illustration: template spreadsheet turned into a compositions spreadsheet by a Python script",
+      sending: "Opening your email app...", contactSubject: "Contact from ",
+      title: "Matheus Ursino | Full Stack Developer",
+      desc: "Matheus Ursino, full stack developer (React, Next.js, TypeScript, Node.js). Websites, web applications and process automation."
+    };
+    var lang = "pt";
+    var els = document.querySelectorAll("[data-i18n],[data-i18n-alt],[data-i18n-placeholder]");
+    els.forEach(function (el) {
+      if (el.dataset.i18n) el.dataset.pt = el.textContent;
+      if (el.dataset.i18nAlt) el.dataset.ptAlt = el.getAttribute("alt");
+      if (el.dataset.i18nPlaceholder) el.dataset.ptPh = el.getAttribute("placeholder");
+    });
+    var ptTitle = document.title, metaDesc = document.querySelector('meta[name="description"]'), ptDesc = metaDesc.content;
+
+    function setLang(l) {
+      lang = l;
+      els.forEach(function (el) {
+        if (el.dataset.i18n) el.textContent = l === "en" ? EN[el.dataset.i18n] : el.dataset.pt;
+        if (el.dataset.i18nAlt) el.setAttribute("alt", l === "en" ? EN[el.dataset.i18nAlt] : el.dataset.ptAlt);
+        if (el.dataset.i18nPlaceholder) el.setAttribute("placeholder", l === "en" ? EN[el.dataset.i18nPlaceholder] : el.dataset.ptPh);
+      });
+      document.documentElement.lang = l === "en" ? "en" : "pt-BR";
+      document.title = l === "en" ? EN.title : ptTitle;
+      metaDesc.content = l === "en" ? EN.desc : ptDesc;
+      document.querySelectorAll(".lang button").forEach(function (b) {
+        b.setAttribute("aria-pressed", String(b.dataset.lang === l));
+      });
+      try { localStorage.setItem("lang", l); } catch (e) {}
+    }
+    document.querySelectorAll(".lang button").forEach(function (b) {
+      b.addEventListener("click", function () { setLang(b.dataset.lang); });
+    });
+    var saved = null;
+    try { saved = localStorage.getItem("lang"); } catch (e) {}
+    if (saved === "en" || saved === "pt") { if (saved === "en") setLang("en"); }
+    else if ((navigator.language || "").toLowerCase().indexOf("pt") !== 0) setLang("en");
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+    function handleSubmit(e) {
+      e.preventDefault();
+      var form = e.target, data = new FormData(form);
+      var subject = encodeURIComponent((lang === "en" ? EN.contactSubject : "Contato de ") + data.get("name"));
+      var body = encodeURIComponent("Nome: " + data.get("name") + "\nE-mail: " + data.get("email") + "\n\n" + data.get("message"));
+      window.location.href = "mailto:matheusursinoprofissional@gmail.com?subject=" + subject + "&body=" + body;
+      document.getElementById("ContactFeedback").textContent = lang === "en" ? EN.sending : "Abrindo seu aplicativo de e-mail...";
+      form.reset();
+    }
+  </script>
 </body>
-
 </html>
